@@ -27,18 +27,28 @@
   <table class="imgtable"><tr><td>
   <img src="./images/map_7_3.png" alt="SLAM" width="150px"  /></img>
       <td>
-  Simultaneous Localization and Mapping (SLAM) is a probabilistic inference technique allowing an autonomous robot to estimate its location from onboard camera and inertial sensors and construct a map of its surroundings in real time. SLAM research has been instrumental in allowing robotics to transition from the factory floor to numerous applications in unstructured environments, such as autonomous transportation, structure inspection, mining, environmental monitoring, and many more. The traditional SLAM algorithms operate in a passive estimation setting, where data is provided to the system but its acquisition is not optimized. Autonomous systems employing SLAM see but do not look. Our central research objective is to develop a novel learning algorithm for SLAM by actively optimizing the robot’s trajectory to obtain more informative data and minimize uncertainty in its environment model.
+  Simultaneous Localization and Mapping (SLAM) is a probabilistic inference technique allowing an autonomous robot to estimate its location from onboard camera and inertial sensors and construct a map of its surroundings in real time. SLAM research has been instrumental in allowing robotics to transition from the factory floor to numerous applications in unstructured environments, such as autonomous transportation, structure inspection, mining, environmental monitoring, and many more. The traditional SLAM algorithms operate in a passive estimation setting, where data is provided to the system but its acquisition is not optimized. Autonomous systems employing SLAM see but do not look. Our central research objective is to develop a novel planning algorithm for SLAM by actively optimizing the robot’s trajectory to obtain more informative data and minimize uncertainty in its environment model.
   <br>
-<a href="https://shumon0423.github.io/IROS2021_webpage/"><b>[Website]</b></a>
+<a href="https://shumon0423.github.io/IROS2021_webpage/"><b>[Project website]</b></a>
+<br>
+<em>Relevant publications:</em> [<a href="https://arxiv.org/abs/2103.05819">IROS'21</a>] [<a href="https://arxiv.org/abs/2110.07546">ACC'22</a>(submitted)]
 </td></tr></table>
 
 
   <div id="subtitle">
-  <h2><font color="black">Learning and Control for Safety-Critical Systems in Robotics</font></h2>
+  <h2><font color="black">Safe Autonomy under Uncertainties</font></h2>
   </div>
-  Recent advancement of machine learning has extremely enhanced the capability of robotic systems in terms of perception, planning, navigation, etc. However, under uncertainty of the environmental model and dynamics of the robot, there still remains significant challanges in planning and operating the robot to accomplish some assigned tasks with guaranteeing some constraints such as safety verification or limitation of control effort. To tackle the problem, we propose an optimal control and reinforcement learning formulation to maximize a long term reward function together with the constraints on the state and action spaces. We pursue to demonstrate such a sophisticated control and learning algorithms in the hardware experiments of ground robot and quadrotors.
+  <table class="imgtable"><tr><td>
+  <img src="./images/safe_Li.png" alt="safe" width="250px"  /></img>
+  <small>Credit: Zhichao Li</small>
+      <td>
+  One of the significant tasks for implementing autonomous robots in practice is to guarantee safety under the executed planning. The global information of the environment is hard to acquire in unknown and unstructured space. Instead, the on-board sensors equipped with robots instead enables perception of the local information. We pursue to found a robust safe navigation to reach a goal without collisions with objects under uncertain robot and environment models via utilizing only local information. The uncertain models can be identified online through synthesizing a safe navigation with a dynamics learning using deep neural network.
+<!--  Recent advancement of machine learning has extremely enhanced the capability of robotic systems in terms of perception, planning, navigation, etc. However, under uncertainty of the environmental model and dynamics of the robot, there still remains significant challanges in planning and operating the robot to accomplish some assigned tasks with guaranteeing some constraints such as safety verification or limitation of control effort. To tackle the problem, we propose an optimal control and reinforcement learning formulation to maximize a long term reward function together with the constraints on the state and action spaces. --> We will demonstrate such a sophisticated control and learning algorithms in the hardware experiments of ground robot and quadrotors.
+<br>
+<a href="https://scl-icra2021.github.io"><b>[Workshop website]</b></a>
 
-<br><br>
+      </td></tr></table>
+  
   <div id="toptitle">
     <h1>Past Projects</h1></div>
 <div id="subtitle">
@@ -63,6 +73,7 @@ Computational modeling of complex physical systems arising in thermal, chemical,
 <table class="imgtable"><tr><td>
 <img src="./images/ES.png" alt="ES" width="225px"  /></img></td>
 <td align="left"><p>
+    
     Extremum Seeking (ES) has been widely utilized as a real-time model-free optimization method arising in adaptive control. ES is literally a user-friendly tool owing to its model-free nature. However, most of the existing contributions of ES have been achieved for a plant governed by Ordinally Differential Equations (ODEs). Motivated by various applications of complex physical systems mentioned above, we pursue to develop a novel ES design to extend the class of systems to PDEs and time-delay systems. Furthermore, inspired by a recent intensive advancement of data science and machine learning, we also pursue to develop a novel data-driven ES algorithm for iterative-learning of unknown parameters as an alternative approach to the well-known stochastic gradient descent.
 <br>
 <em>Relevant publications:</em> [<a href="https://www.sciencedirect.com/science/article/pii/S0005109818302656">Auto'18</a>] [<a href="https://ieeexplore.ieee.org/abstract/document/8815123">ACC'19</a>]
@@ -92,7 +103,10 @@ sound three-dimensional products from a computer-aided design (CAD) models. We d
     <img src="./images/battery.png" alt="Battery1"align="left"  width="225px"vspace="10"  /></img>
     <img src="./images/Battery2.png" alt="Battery2"align="left"  width="225px"  /></img></td>
 <td align="left"><p><br>
-    Battery management is crucial for safe and efficient use of numerous kinds of electronics such as smartphones, laptops, electric vehicles, etc. Lithium Iron Phosphate (LFP) has several attractive features as active material in lithium-ion batteries such as thermal safety, cost effectiveness, and long cycle life. LFP and other common active materials (e.g. Lithium Cobalt Oxide) show unique charge-discharge characteristics due to an underlying crystallographic solid-solid phase transition. We explore the electrochemical models of the phase transition materials for the Single Particle Model (SPM), and develop State-of-Charge (SoC) estimation algorithm via an observer for the concentration profile of lithium ions from the SPM.
+    Recent rapid advancement of the capability of the lithium-ion batteries is extremely impressive, which realizes the sufficiently large capacity and high power to be utilized in many technologies diverging from the electric vehicles to smart grids. The task of software development for the advanced battery management is to found a creditable algorithm to estimate unmeasureable important variables of the batteries, such as State-of-Charge, State-of-Health, State-of-Power, in a accurate and implementable manner. Full physics-based models consisting of considerable amount of particles in electrodes and electrolyte render a quite heavy computation which does not enable an online execution, while oversimplified equivalent circuit models do not accomplish sufficient accuracy in some regime.  We have innovated the accurate SoC estimation method for the lithium-ion batteries with phase transition materials, such as LiCoO2 and LiFePO4, by designing a state estimator for an idealized electrochemical PDE model. Our algorithm is sufficiently fast to be implementable online, highly accurate in SoC estimation, and strongly robust to noisy measurement and model uncertainty. The elimination of more than 15 % error in SoC within 5 minutes was demonstrated, even under highly noisy measurements.
+
+
+<!--    Battery management is crucial for safe and efficient use of numerous kinds of electronics such as smartphones, laptops, electric vehicles, etc. Lithium Iron Phosphate (LFP) has several attractive features as active material in lithium-ion batteries such as thermal safety, cost effectiveness, and long cycle life. LFP and other common active materials (e.g. Lithium Cobalt Oxide) show unique charge-discharge characteristics due to an underlying crystallographic solid-solid phase transition. We explore the electrochemical models of the phase transition materials for the Single Particle Model (SPM), and develop State-of-Charge (SoC) estimation algorithm via an observer for the concentration profile of lithium ions from the SPM. -->
 <br>
 <em>Relevant publications:</em> [<a href="https://doi.org/10.1115/1.4048779">DSMC'21</a>]
     </p>
@@ -105,7 +119,11 @@ sound three-dimensional products from a computer-aided design (CAD) models. We d
     <img src="./images/icedata_2.jpg" alt="Arctic" width="225px"  /></img>
 </td>
 <td align="left"><p>
-    Arctic sea ice has been studied intensively in the field of climate science. One of the main reasons is due to ice-albedo feedback which influences climate dynamics due to the high reflectivity of sea ice. The other reason is the rapid decline of the Arctic sea ice extent in the recent decade shown in several satellite observations (see left figure reported by NASA). To predict the future sea ice extent, the online estimation of the sea ice temperature profile is crucial. My goal is to develop an observer algorithm to estimate temperature profile for the Arctic sea ice in a global climate model via some available measurements of sea ice from satellite data.
+    
+    After the year 2000, the amount of Arctic sea ice starts drastically declining, as observed from the satellite data by NASA. The sea ice plays a significant role in climate dynamics due to its high reflectivity, thereby the decline of the sea ice leads to more absorption of the solar energy into the earth, and thus the global warming is promoted. To accurately predict the future amount of the sea ice, the spatial temperature profile inside the sea ice needs to be known. However, the spatially distributed temperature in sea ice is difficult to recover in realtime using a limited number of thermal sensors. Hence, the online estimation of the sea ice temperature profile based on some available measurements is crucial for the prediction of the climate change. I have developed a state estimator for the sea ice temperature profile utilizing satellite data of the surface temperature and the thickness of the sea ice. The proposed method achieves accurate estimation of the temperature profile of the Arctic sea ice, and robust performance with respect to the unmodeled salinity effect and the uncertainties in physical parameters.
+    
+ <!--   Arctic sea ice has been studied intensively in the field of climate science. One of the main reasons is due to ice-albedo feedback which influences climate dynamics due to the high reflectivity of sea ice. The other reason is the rapid decline of the Arctic sea ice extent in the recent decade shown in several satellite observations (see left figure reported by NASA). To predict the future sea ice extent, the online estimation of the sea ice temperature profile is crucial. My goal is to develop an observer algorithm to estimate temperature profile for the Arctic sea ice in a global climate model via some available measurements of sea ice from satellite data. -->
+ 
 <br>
 <em>Relevant publications:</em> [<a href="https://www.sciencedirect.com/science/article/pii/S000510981930576X">Auto'20</a>]
     </p>
