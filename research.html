@@ -30,7 +30,8 @@
  <!-- <img src="./images/map_2.GIF" alt="Map2" width="150px"  align="left" vspace="0"/></img> -->
   </td>
   <td align="left">
-  Simultaneous Localization and Mapping (SLAM) is a probabilistic inference technique allowing an autonomous robot to estimate its location from onboard camera and inertial sensors and construct a map of its surroundings in real time. SLAM research has been instrumental in allowing robotics to transition from the factory floor to numerous applications in unstructured environments, such as autonomous transportation, structure inspection, mining, environmental monitoring, and many more. The traditional SLAM algorithms operate in a passive estimation setting, where data is provided to the system but its acquisition is not optimized. Autonomous systems employing SLAM see but do not look. Our central research objective is to develop a novel planning algorithm for SLAM by actively optimizing the robot’s trajectory to obtain more informative data and minimize uncertainty in its environment model.
+  Simultaneous Localization and Mapping (SLAM) is a probabilistic inference technique that allows an autonomous robot to estimate its location from onboard cameras and inertial sensors while simultaneously constructing a map of its surroundings. SLAM research has been instrumental in enabling robotics to transition from the factory floor to numerous applications in unstructured environments, such as autonomous transportation, structure inspection, mining, and environmental monitoring. 
+  Traditional SLAM algorithms operate in a passive estimation setting, where data is provided to the system but its acquisition is not optimized. In essence, autonomous systems employing SLAM see but do not look. Our central research objective is to develop novel planning algorithms for SLAM that actively optimize the robot’s trajectory. This allows the system to gather more informative data and minimize uncertainty in its model of the environment.
   <br>
 <a href="https://shumon0423.github.io/IROS2021_webpage/"><b>[Project website]</b></a>
 <br>
@@ -61,7 +62,7 @@
   <h2><font color="black">Safety under Uncertainty</font></h2>
   </div>
   <table class="imgtable"><tr><td>
-  <img src="./images/safe.gif" alt="safe" width="400px"  /></img>
+  <img src="./images/vc.gif" alt="safe" width="400px"  /></img>
       <td>
   One of the significant tasks for implementing autonomous robots in practice is to guarantee safety under the executed planning. The global information of the environment is hard to acquire in unknown and unstructured space. The on-board sensors equipped with robots instead enables perception of the local information. We pursue to found a robust safe navigation to reach a goal without collisions with objects under uncertain robot and environment models via utilizing only local information. The uncertain models can be identified online through synthesizing a safe navigation with a dynamics learning using deep neural network.
 <!--  Recent advancement of machine learning has extremely enhanced the capability of robotic systems in terms of perception, planning, navigation, etc. However, under uncertainty of the environmental model and dynamics of the robot, there still remains significant challanges in planning and operating the robot to accomplish some assigned tasks with guaranteeing some constraints such as safety verification or limitation of control effort. To tackle the problem, we propose an optimal control and reinforcement learning formulation to maximize a long term reward function together with the constraints on the state and action spaces. --> We will demonstrate such a sophisticated control and learning algorithms in the hardware experiments of ground robot and quadrotors.
